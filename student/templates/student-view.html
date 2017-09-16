@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+	
+	<br>
+   <h2>Students</h2>
+       <!-- Carousel
+    ================================================== -->
+
+	
+	<form method="post" >
+		{% csrf_token %}
+		{{ form.as_p}}
+		
+		<input type="submit" value="Add Student">
+	</form>
+		
+   
+	
+	  <h2><a href="{% url 'courses' %}">Courses<a></h2>
+	  
+
+	  
+{% endblock %}
+
+

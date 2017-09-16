@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+ <!--  include "base.html"  -->  
+   <h2>Student Info</h2>
+
+	<p>First Name: {{ details.first_name}}</p>
+	<p>Last Name:{{ details.last_name}} </p>
+	<p>Middle Name: {{ details.middle_name}}</p>
+	<p>Age: {{ details.age}} </p>
+	
+	{% for course in details.course.all %}
+	<p>Course: {{ course }} </p>
+	
+	
+	{% endfor %}
+		
+	
+{% endblock %}	
+	
+	
+
