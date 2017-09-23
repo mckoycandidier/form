@@ -57,7 +57,7 @@ class Student(View):
 		
 		if form.is_valid():
 			form.save()
-			return redirect('student')
+			return redirect('student-form')
 			
 		context = {
 			'form' : form,
